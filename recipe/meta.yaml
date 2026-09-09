@@ -1,5 +1,5 @@
-{% set version = "13.3.33" %}
-{% set cuda_version = "13.3" %}
+{% set version = "13.4.49" %}
+{% set cuda_version = "13.4" %}
 {% set platform = "linux-x86_64" %}  # [linux64]
 {% set platform = "linux-sbsa" %}  # [aarch64 and arm_variant_type == "sbsa"]
 {% set platform = "linux-aarch64" %}  # [aarch64 and arm_variant_type == "tegra"]
@@ -14,8 +14,8 @@
 
 {% set soname = version.split(".")[0] %}
 
-{% set sha256 = "db36b1381bb3105f2f13591393131d93f501958ebd44e9d0d52234cbbaf8cbd0" %}  # [linux64]
-{% set sha256 = "af8e930c3527b8eeddea755b40d77e505691ca389f3135d04f46718aec3f45cb" %}  # [aarch64 and arm_variant_type=="sbsa"]
+{% set sha256 = "4fe0ec5e69bb7f46858aaa7c94de68b34de004dac91e88fb4e5217f3866b440a" %}  # [linux64]
+{% set sha256 = "f1a38010ba49088e3177ea4ac0de311732039e10b690425cf8d9431a1638e271" %}  # [aarch64 and arm_variant_type=="sbsa"]
 #{% set sha256 = "4d90195b2a6b7d6a4b36583e8dead5f10fe702c4d76d5d1b78abc074bb2ec893" %}  # [aarch64 and arm_variant_type=="tegra"]
 
 package:
